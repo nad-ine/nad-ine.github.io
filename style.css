@@ -1,0 +1,54 @@
+
+
+.menu-toggle {
+    position: fixed;
+}
+
+.menu-toggle input[type="checkbox"]{
+    display: none;
+}
+
+.menu-toggle label {
+    display: block;
+    cursor: pointer;
+}
+
+#menu-icon {
+    width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.side-menu {
+    position: absolute;
+    top: 5rem;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    transition: left 0.3s ease;
+}
+
+.menu-toggle input[type="checkbox"]:checked + label + .side-menu {
+    left: 0;
+}
+
+.menu-toggle input[type="checkbox"]:checked + label #menu-icon {
+    transform: rotate(90deg) !important;
+}
+
+.menu-toggle input[type="checkbox"]:not(:checked) + label #menu-icon {
+    transform: rotate(0deg) !important;
+}
+
+.list-element {
+    list-style: none;
+    left: 25px;
+    font-weight: bold;
+    color: #333333;
+    position: relative;
+    text-shadow: 
+    -1px -1px 0 white, 
+    1px -1px 0 white, 
+    -1px 1px 0 white, 
+    1px 1px 0 white;
+    line-height: 1.5;
+}

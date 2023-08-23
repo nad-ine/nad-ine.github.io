@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadine Roberts</title>
+    <link href="images/blk star copy.png" rel="shortcut icon">
+    <link rel="stylesheet" href="Portfoliostyle v1.3.css">
+    <meta name="description" content="Ilustrator, Graphic Designer, and Developer. Based in Leeds, UK.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <header id="header">
+        <div class="menu-toggle"><input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox">
+            <img src="images/star.png" alt="Star-shaped menu icon" class="mx-auto img-fluid" id="menu-icon">
+        </label>
+        <nav class="side-menu">
+            <ul>
+                <li class="about-me list-element">About Me</li>
+                <li class="Portfolio list-element">Portfolio</li>
+                <li class="shop list-element">Shop</li>
+                <li class="contact list-element">Contact</li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <section class="hero" id="home">
+            <div class="text-center">
+            <a href="#">
+                <img src="images/v2.png" alt="Nadine.illu eye logo" class="img-fluid logo">
+            </a>
+        </div>
+    </section>
+<div class="star-divider"></div>
+
+<div class="about-and-skills">
+  <section class="row" id="about">
+      <img src="images/me!!! copy.png" alt="picture of Nadine" class="col-4 img-fluid">
+      <div class="col-4 mx-auto">    
+      <h1>About me</h1>
+          <p>I'm a graphic design graduate from DeMontfort University with a passion for creativity and aesthetics. Currently, I'm venturing into the world of coding with The Coders Guild, expanding my skill set and combining design with technology. But my learning won't end there; I am always seeking new challenges and opportunities to grow.<br>
+              As a designer-turned-coder I have the advantage of understanding both the visual aspects and the technical aspects of design. This fusion allows me to craft user experiences that are not only visually stunning but also function seamlessly. Whether it's developing a responsive website or designing captivating digital assets, I strive to bring a harmonious balance of aesthetics and functionality to all my projects.</p>
+      </div>
+  </section>
+</div>
+
+<section class="row d-flex justify-content-center" id="skills-education">
+  <div class="col-4">
+  <h2 class="circular-border" id="skills">Skills</h2>
+  <ul>
+      <li>
+        <p class="subtitle">Graphic Design</p>
+        <p>Designing creative and impactful visuals.</p>
+        </li>
+      <li>
+        <p class="subtitle">Illustrator</p>
+        <p>Conveying concepts through visual media.</p>
+        </li>
+      <li>
+        <p class="subtitle">UI/UX</p>
+        <p>Designing Web/App Interfaces.</p>
+        </li>
+      <li>
+        <p class="subtitle">Coding</p>
+        <p>HTML, CSS.</p>
+        </li>
+  </ul>
+  </div>
+  <div class="col-4">
+  <h2 class="circular-border" id="education">Education</h2>
+  <ul>
+      <li>
+        <p class="subtitle">The Coders Guild</p>
+        <p>July 2023 - October 2023</p>
+      </li>
+      <li>
+        <p class="subtitle">BA Hons, DeMontfort University</p>
+        <p>October 2018 - May 2022</p>
+      </li>
+      <li>
+        <p class="subtitle">Art Foundation, DeMontfort University</p>
+        <p>September 2017 - March 2018</p>
+      </li>
+  </ul>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2 class="underlined">My Work</h2>
+  <div class="pfolio-list">
+      <li class="work">
+          <img src="images/firstmile.png" alt="First Mile project." class="img-fluid portfolio-img">
+          <div class="pfolio-text">
+              <h3>First Mile</h3>
+              <p>This is a rewards app for the recycling company 'First Mile'.</p>
+          </div>
+      </li>
+      <li class="work">
+          <img src="images/businesscard.png" alt="Nails By Rhi Business Card" class="img-fluid portfolio-img">
+          <div class="pfolio-text">
+              <h3>Nails By Rhi business card</h3>
+              <p>Business card for my clients nail business.</p>
+          </div>
+      </li>
+      <li class="work">
+          <img src="images/beerbottle.png" alt="Nadine.illu branded beer bottle and glass" class="img-fluid portfolio-img">
+          <div class="pfolio-text">
+              <h3>Nadine.illu branded <br>beer bottle and glass</h3>
+              <p>Self-branded beer bottle and glass.</p>
+          </div>
+      </li>
+  </div>
+</section>
+
+<div class="star-divider"></div>
+
+    <!-- contact form -->
+    <section id="contact-form">
+    
+            <section class="w-100 p-4 d-flex justify-content-center pb-4">
+              <form action="send_email.php" method="post" id="form" class="text-center" style="width: 100%; max-width: 300px">
+                <h2 class="contact-me">Contact Me! :)</h2>
+                
+                <div class="form-outline mb-4">
+                  <input type="text" id="name" name="name" class="form-control" required>
+                  <label class="form-label" for="name" style="margin-left: 0px;">Name</label>
+                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 42.4px;"></div><div class="form-notch-trailing"></div></div></div>
+                
+                <div class="form-outline mb-4">
+                  <input type="email" id="email" name="email" class="form-control" required>
+                  <label class="form-label" for="email" style="margin-left: 0px;">Email address</label>
+                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 88.8px;"></div><div class="form-notch-trailing"></div></div></div>
+                
+                <div class="form-outline mb-4">
+                  <input type="text" id="subject" name="subject" class="form-control" required>
+                  <label class="form-label" for="subject" style="margin-left: 0px;">Subject</label>
+                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 50.4px;"></div><div class="form-notch-trailing"></div></div></div>
+        
+                <div class="form-outline mb-4">
+                  <textarea class="form-control" id="message" name="message" rows="4" data-gramm="false" wt-ignore-input="true"></textarea>
+                  <label class="form-label" for="message" style="margin-left: 0px;">Message</label>
+                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 60px;"></div><div class="form-notch-trailing"></div></div></div>
+        
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="mailCopy" id="mailCopy" value="1">
+                  <label for="mailCopy" class="form-check-label">Send me copy</label>
+                </div>
+        
+                <button type="submit" class="btn btn-primary btn-block my-4">Send</button>
+              </form>
+            </section>
+    </section>
+
+<script>
+    document.addEventListener("click", function(event) {
+     if (!event.target.closest(".menu-toggle") && document.querySelector("#menu-checkbox:checked")) {
+        document.querySelector("#menu-checkbox").checked = false;
+      }
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ </body>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <!------ add social media icons -------->
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+</footer>
+</html>

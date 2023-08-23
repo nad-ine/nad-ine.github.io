@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* media (max-width: 767px) {
+    
+}
+
+media (min-width: 767px) {
+
+} */
+
+li {
+    list-style: none;
+}
+
+.menu-toggle {
+    position: fixed;
+}
+
+.menu-toggle input[type="checkbox"]{
+    display: none;
+}
+
+.menu-toggle label {
+    display: block;
+    cursor: pointer;
+}
+
+#menu-icon {
+    width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.side-menu {
+    position: absolute;
+    top: 8rem;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    transition: left 0.3s ease;
+}
+
+.menu-toggle input[type="checkbox"]:checked + label + .side-menu {
+    left: 0;
+}
+
+.menu-toggle input[type="checkbox"]:checked + label #menu-icon {
+    transform: rotate(90deg) !important;
+}
+
+.menu-toggle input[type="checkbox"]:not(:checked) + label #menu-icon {
+    transform: rotate(0deg) !important;
+}
+
+.list-element {
+    list-style: none;
+    left: -5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    position: relative;
+    text-shadow: 
+    -1px -1px 0 white, 
+    1px -1px 0 white, 
+    -1px 1px 0 white, 
+    1px 1px 0 white;
+    line-height: 1.5;
+}
+
+.logo {
+    max-height: 60rem;
+}
+
+.star-divider {
+    display: flex;
+    background-image: url("images/star\ p.png");
+    background-repeat: repeat-x;
+    background-size: 7rem auto;
+    height: 8rem;
+    padding: 8% 0;
+}
+
+.about-and-skills {
+    padding-left: 10%;
+}
+
+#skills-education, #portfolio {
+    margin: 6rem 0;
+    padding-top: 3rem;
+}
+
+#skills-education > li {
+    padding: 5px 0;
+    line-height: 10px;
+}
+
+#skills, #education {
+    padding-bottom: 1rem;
+}
+
+.work > img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.pfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.underlined, #about-me, .contact-me {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 25px;
+}
+
+.work {
+    padding: 1.5rem;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.pfolio-text {
+    padding-top: 7px;
+}
